@@ -58,6 +58,10 @@ Distributed under the terms of the [MIT](https://opensource.org/licenses/MIT) li
 If you encounter any problems, please [file an issue](https://github.com/clamytoe/toepack/issues) along with a detailed description.
 
 ## Changelog
+* **v0.1.4** Added extensive logging.
+* **v0.1.3** Moved Entity and Vault classes into their own files.
+* **v0.1.2** Added Entity class to encrypt independent entries.
+* **v0.1.1** Created Vault class to encrypt files.
 * **v0.1.0** Initial commit.
 
 [python-version]:https://img.shields.io/badge/python-3.8-brightgreen.svg
