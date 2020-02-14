@@ -12,35 +12,70 @@ NOTE: This project was generated with [Cookiecutter](https://github.com/audreyr/
 
 ### Initial setup
 ```zsh
-cd Projects
-git clone https://github.com/clamytoe/passlock.git
-cd passlock
+(base) ➜  ~ cd Projects
+(base) ➜  Projects git clone https://github.com/clamytoe/passlock.git
+(base) ➜  Projects cd passlock
 ```
 
 #### Anaconda setup
 If you are an Anaconda user, this command will get you up to speed with the base installation.
 ```zsh
-conda env create
-conda activate passlock
+(base) ➜  passlock git:(master) conda env create
+(base) ➜  passlock git:(master) conda activate passlock
 ```
 
 #### Regular Python setup
 If you are just using normal Python, this will get you ready, but I highly recommend that you do this in a virtual environment. There are many ways to do this, the simplest using *venv*.
 ```zsh
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+(base) ➜  passlock git:(master) python3 -m venv venv
+(base) ➜  passlock git:(master) source venv/bin/activate
+(passlock) ➜  passlock git:(master) pip install -r requirements.txt
 ```
 
 #### Final setup
 ```zsh
-pip install -e .
+(passlock) ➜  passlock git:(master) pip install -e .
 ```
 
 ## Usage
+At the moment I just have a sample entry so simply running the command will demonstrate what it does. 
+
 ```zsh
-passlock
+(passlock) ➜  passlock git:(master) passlock
+Successfully created: /home/mohh/Documents/.passlock/ip.bin
+
+[ip]
+INFO: http://192.168.2.1
+USER: admin
+PASS: admin
 ```
+
+The encrypted file will be created in `~/Documents/.passlock/ip.bin` and it's contents will look something like this:
+
+```text
+�.z����dz�L���6��-`b
+                     �
+                      ZP�ɚO���Bg���4���7e�ܧ��T�GH�:B��������b��/5����@��PH�Gp��>xi���q��@�(pWb%��Ǜ�9UE���W���m����hN���� D$�f����_��"z��M
+                                                                  �p�T�|
+�T���`��m6p�"/E���>+�h���d/'H����E�RRBƞ��a�A�[#�
+                   �Ɖ�I��۞����i6�'cZH;��ݢN
+%�y?@~�Dz�,��Og)�
++����ن���ߺ��`�	5	LC��S��1������{M�F	PW��0Q�����Ǒ�������Ƌ��ߕ���pb�/E��$�8�]`������I)�#c���X4�
+                               w�fb�M���g�A[gYZ�étk�dg�'���;��D	�t�_��JHW�J~��)G�}}��/N�jD��W���[0���7g��u�8OO�ǿP02n�y����%ׄ_��+^_Le��Z�x��fD�6+h;�6���2C����OXJl$�h���%  
+```
+
+At the same time, it will generate a new private and public keys for the program and stash them in `~/.passloc/`.
+
+> **NOTE**: At this time, you must run the `passlock` command from within the project folder. I'm working on how to update the path for the log files dynamically during the project creation. 
+## TODO
+* Setup path for logging during package creation
+* Add a CLI interface that will:
+    * List all entries
+    * Search for a particular entry
+    * Add/Update and entry
+    * Remove and entry
+    * Export all data
+* Add a GUI that does the same as the CLI
 
 ## Contributing
 Contributions are very welcome. Tests can be run with with `pytest -v`, please ensure that all tests are passing and that you've checked your code with the following packages before submitting a pull request:
