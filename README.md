@@ -1,5 +1,5 @@
 # Password Locker (*passlock*)
-> *Password protect your sensitive files from prying eyes.*
+> *Encrypt your passwords from prying eyes.*
 
 ![Python version][python-version]
 ![Latest version][latest-version]
@@ -8,7 +8,7 @@
 [![GitHub Stars][stars-image]][stars-url]
 [![License][license-image]][license-url]
 
-NOTE: This app was generated with [Cookiecutter](https://github.com/audreyr/cookiecutter) along with [@clamytoe's](https://github.com/clamytoe) [toepack](https://github.com/clamytoe/toepack) project template.
+NOTE: This project was generated with [Cookiecutter](https://github.com/audreyr/cookiecutter) along with [@clamytoe's](https://github.com/clamytoe) [toepack](https://github.com/clamytoe/toepack) project template.
 
 ### Initial setup
 ```zsh
