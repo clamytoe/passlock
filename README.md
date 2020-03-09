@@ -87,7 +87,7 @@ Contributions are very welcome. Tests can be run with with `pytest -v`, please e
 I am not adhering to them strictly, but try to clean up what's reasonable.
 
 ## License
-Distributed under the terms of the [MIT](https://opensource.org/licenses/MIT) license, "passlock" is free and open source software.
+Distributed under the terms of the [Apache 2.0](https://apache.org/licenses/LICENSE-2.0) license, "passlock" is free and open source software.
 
 ## Issues
 If you encounter any problems, please [file an issue](https://github.com/clamytoe/toepack/issues) along with a detailed description.
